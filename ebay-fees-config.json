@@ -1,0 +1,1301 @@
+{
+  "metadata": {
+    "lastUpdated": "March 7, 2025",
+    "version": "2025.1",
+    "source": "eBay US Fee Structure - Complete Details",
+    "managedPaymentsFee": {
+      "rate": 0.027,
+      "perTransaction": 0.30
+    },
+    "internationalFee": 0.0165,
+    "topRatedSellerDiscount": 0.10
+  },
+  "nonStore": {
+    "standard": {
+      "name": "Standard Categories (Most Items)",
+      "description": "Applies to most categories including Antiques, Baby, Crafts, Home & Garden, Pet Supplies, Sporting Goods, etc.",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 7500,
+          "rate": 0.1325
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "antiques",
+        "baby",
+        "crafts",
+        "dolls",
+        "bears",
+        "entertainment",
+        "health",
+        "beauty",
+        "home",
+        "garden",
+        "pet supplies",
+        "pottery",
+        "glass",
+        "sporting goods",
+        "art"
+      ],
+      "categoryPaths": [
+        "Antiques",
+        "Baby",
+        "Crafts",
+        "Dolls & Bears",
+        "Entertainment Memorabilia",
+        "Health & Beauty",
+        "Home & Garden",
+        "Pet Supplies",
+        "Pottery & Glass",
+        "Specialty Services",
+        "Sporting Goods",
+        "Art",
+        "Business & Industrial",
+        "Clothing, Shoes & Accessories",
+        "Collectibles",
+        "Consumer Electronics",
+        "Movies & TV",
+        "Musical Instruments & Gear",
+        "Sports Memorabilia",
+        "Toys & Hobbies"
+      ],
+      "exclude": [
+        "NFT",
+        "athletic shoes",
+        "women's bags",
+        "handbags",
+        "guitars",
+        "basses",
+        "heavy equipment",
+        "non-sport trading cards",
+        "bullion"
+      ]
+    },
+    "booksAndMagazines": {
+      "name": "Books & Magazines",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 7500,
+          "rate": 0.1495
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "book",
+        "books",
+        "magazine",
+        "magazines",
+        "novel",
+        "textbook",
+        "comic book"
+      ],
+      "categoryPaths": [
+        "Books",
+        "Books & Magazines"
+      ]
+    },
+    "heavyEquipment": {
+      "name": "Heavy Equipment",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 15000,
+          "rate": 0.03
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.005
+        }
+      ],
+      "keywords": [
+        "heavy equipment",
+        "commercial printing press",
+        "food truck",
+        "trailer",
+        "cart"
+      ],
+      "categoryPaths": [
+        "Business & Industrial > Heavy Equipment, Parts & Attachments > Heavy Equipment",
+        "Business & Industrial > Printing & Graphic Arts > Commercial Printing Presses",
+        "Business & Industrial > Restaurant & Food Service > Food Trucks, Trailers & Carts"
+      ]
+    },
+    "athleticShoes": {
+      "name": "Athletic Shoes",
+      "type": "conditional",
+      "conditions": [
+        {
+          "condition": "price >= 149.99",
+          "rate": 0.08,
+          "note": "$0.30 per order not charged"
+        },
+        {
+          "condition": "price < 149.99",
+          "rate": 0.1325
+        }
+      ],
+      "keywords": [
+        "athletic shoes",
+        "sneakers",
+        "running shoes",
+        "basketball shoes",
+        "training shoes"
+      ],
+      "categoryPaths": [
+        "Clothing, Shoes & Accessories > Men > Men's Shoes > Athletic Shoes",
+        "Clothing, Shoes & Accessories > Women > Women's Shoes > Athletic Shoes"
+      ]
+    },
+    "womensHandbags": {
+      "name": "Women's Bags & Handbags",
+      "type": "threshold",
+      "threshold": 2000,
+      "belowRate": 0.15,
+      "aboveRate": 0.09,
+      "keywords": [
+        "handbag",
+        "purse",
+        "clutch",
+        "tote",
+        "crossbody",
+        "shoulder bag",
+        "women's bag"
+      ],
+      "categoryPaths": [
+        "Clothing, Shoes & Accessories > Women > Women's Bags & Handbags"
+      ]
+    },
+    "bullion": {
+      "name": "Bullion (Coins & Paper Money)",
+      "type": "threshold",
+      "threshold": 7500,
+      "belowRate": 0.1325,
+      "aboveRate": 0.07,
+      "keywords": [
+        "bullion",
+        "gold bar",
+        "silver bar",
+        "gold coin",
+        "silver coin",
+        "precious metals"
+      ],
+      "categoryPaths": [
+        "Coins & Paper Money > Bullion"
+      ]
+    },
+    "vrAccessories": {
+      "name": "Virtual Reality Accessories",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 7500,
+          "rate": 0.1325
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.02
+        }
+      ],
+      "keywords": [
+        "vr accessories",
+        "virtual reality accessories",
+        "vr headset accessories"
+      ],
+      "categoryPaths": [
+        "Consumer Electronics > Virtual Reality > Other Virtual Reality Accessories"
+      ]
+    },
+    "watchesPartsAccessories": {
+      "name": "Watches, Parts & Accessories",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 1000,
+          "rate": 0.15
+        },
+        {
+          "upTo": 7500,
+          "rate": 0.065
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.03
+        }
+      ],
+      "keywords": [
+        "watch",
+        "watches",
+        "watch parts",
+        "watch accessories",
+        "smartwatch",
+        "timepiece"
+      ],
+      "categoryPaths": [
+        "Jewelry & Watches > Watches, Parts & Accessories"
+      ]
+    },
+    "jewelry": {
+      "name": "Jewelry (Everything Else)",
+      "type": "threshold",
+      "threshold": 5000,
+      "belowRate": 0.15,
+      "aboveRate": 0.09,
+      "keywords": [
+        "jewelry",
+        "necklace",
+        "ring",
+        "bracelet",
+        "earrings",
+        "diamonds"
+      ],
+      "categoryPaths": [
+        "Jewelry & Watches"
+      ],
+      "exclude": [
+        "watch",
+        "watches",
+        "parts & accessories"
+      ]
+    },
+    "guitarsAndBasses": {
+      "name": "Guitars & Basses",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 7500,
+          "rate": 0.0635
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "guitar",
+        "guitars",
+        "bass",
+        "basses",
+        "bass guitar",
+        "electric guitar",
+        "acoustic guitar"
+      ],
+      "categoryPaths": [
+        "Musical Instruments & Gear > Guitars & Basses"
+      ]
+    },
+    "nfts": {
+      "name": "NFTs (All Categories)",
+      "type": "flat",
+      "rate": 0.05,
+      "keywords": [
+        "nft",
+        "nfts",
+        "non-fungible token"
+      ],
+      "categoryPaths": [
+        "Art NFTs",
+        "Emerging NFTs",
+        "Non-Sport Trading Card NFTs",
+        "Movie NFTs",
+        "Music NFTs",
+        "Sport Trading Card NFTs",
+        "CCG NFTs"
+      ]
+    },
+    "vinylRecords": {
+      "name": "Vinyl Records",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 7500,
+          "rate": 0.1325
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "vinyl",
+        "vinyl record",
+        "lp",
+        "album",
+        "12 inch",
+        "7 inch"
+      ],
+      "categoryPaths": [
+        "Music > Vinyl Records"
+      ]
+    },
+    "musicOther": {
+      "name": "Music (CDs, Cassettes, etc.)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 7500,
+          "rate": 0.1495
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "music",
+        "cd",
+        "compact disc",
+        "cassette",
+        "tape"
+      ],
+      "categoryPaths": [
+        "Music"
+      ],
+      "exclude": [
+        "vinyl",
+        "nft"
+      ]
+    }
+  },
+  "store": {
+    "standard": {
+      "name": "Standard Categories (Most Items)",
+      "description": "Applies to most categories for store subscribers",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1235
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "antiques",
+        "baby",
+        "crafts",
+        "dolls",
+        "bears",
+        "entertainment",
+        "health",
+        "beauty",
+        "home",
+        "garden",
+        "pet supplies",
+        "pottery",
+        "glass",
+        "sporting goods",
+        "art"
+      ],
+      "categoryPaths": [
+        "Antiques",
+        "Baby",
+        "Crafts",
+        "Dolls & Bears",
+        "Entertainment Memorabilia",
+        "Health & Beauty",
+        "Home & Garden",
+        "Pet Supplies",
+        "Pottery & Glass",
+        "Specialty Services",
+        "Sporting Goods",
+        "Art",
+        "Business & Industrial",
+        "Clothing, Shoes & Accessories",
+        "Collectibles",
+        "Sports Memorabilia",
+        "Toys & Hobbies"
+      ],
+      "exclude": [
+        "NFT",
+        "athletic shoes",
+        "women's bags",
+        "handbags",
+        "cameras",
+        "cell phones",
+        "computers",
+        "tablets",
+        "heavy equipment"
+      ]
+    },
+    "booksAndMagazines": {
+      "name": "Books & Magazines",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1495
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "book",
+        "books",
+        "magazine",
+        "magazines",
+        "novel",
+        "textbook"
+      ],
+      "categoryPaths": [
+        "Books",
+        "Books & Magazines"
+      ]
+    },
+    "heavyEquipment": {
+      "name": "Heavy Equipment",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 15000,
+          "rate": 0.025
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.005
+        }
+      ],
+      "keywords": [
+        "heavy equipment",
+        "commercial printing press",
+        "food truck"
+      ],
+      "categoryPaths": [
+        "Business & Industrial > Heavy Equipment, Parts & Attachments > Heavy Equipment",
+        "Business & Industrial > Printing & Graphic Arts > Commercial Printing Presses",
+        "Business & Industrial > Restaurant & Food Service > Food Trucks, Trailers & Carts"
+      ]
+    },
+    "camerasLowFee": {
+      "name": "Cameras & Photo (Low-Fee Items)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.01352
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "camera drone parts",
+        "tripod",
+        "supports",
+        "replacement parts"
+      ],
+      "categoryPaths": [
+        "Cameras & Photo > Camera Drone Parts & Accessories",
+        "Cameras & Photo > Other Cameras & Photo",
+        "Cameras & Photo > Replacement Parts & Tools",
+        "Cameras & Photo > Tripods & Supports"
+      ],
+      "exclude": [
+        "memory card"
+      ]
+    },
+    "camerasMemoryCards": {
+      "name": "Camera Memory Cards",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "memory card",
+        "sd card",
+        "microsd",
+        "cf card"
+      ],
+      "categoryPaths": [
+        "Cameras & Photo > Camera Drone Parts & Accessories > Memory Cards"
+      ]
+    },
+    "camerasOther": {
+      "name": "Cameras & Photo (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "camera",
+        "lens",
+        "flash",
+        "photography"
+      ],
+      "categoryPaths": [
+        "Cameras & Photo"
+      ]
+    },
+    "cellPhoneAccessories": {
+      "name": "Cell Phone Accessories",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1235
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "cell phone accessories",
+        "phone case",
+        "screen protector",
+        "charger"
+      ],
+      "categoryPaths": [
+        "Cell Phones & Accessories > Cell Phone Accessories"
+      ],
+      "exclude": [
+        "memory card"
+      ]
+    },
+    "cellPhoneMemoryCards": {
+      "name": "Cell Phone Memory Cards",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "memory card",
+        "sd card",
+        "microsd"
+      ],
+      "categoryPaths": [
+        "Cell Phones & Accessories > Cell Phone Accessories > Memory Cards"
+      ]
+    },
+    "cellPhonesOther": {
+      "name": "Cell Phones (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "cell phone",
+        "smartphone",
+        "mobile phone",
+        "iphone",
+        "samsung",
+        "android"
+      ],
+      "categoryPaths": [
+        "Cell Phones & Accessories"
+      ]
+    },
+    "athleticShoes": {
+      "name": "Athletic Shoes",
+      "type": "conditional",
+      "conditions": [
+        {
+          "condition": "price >= 149.99",
+          "rate": 0.07,
+          "note": "$0.30 per order not charged"
+        },
+        {
+          "condition": "price < 149.99",
+          "rate": 0.1235
+        }
+      ],
+      "keywords": [
+        "athletic shoes",
+        "sneakers",
+        "running shoes"
+      ],
+      "categoryPaths": [
+        "Clothing, Shoes & Accessories > Men > Men's Shoes > Athletic Shoes",
+        "Clothing, Shoes & Accessories > Women > Women's Shoes > Athletic Shoes"
+      ]
+    },
+    "womensHandbags": {
+      "name": "Women's Bags & Handbags",
+      "type": "threshold",
+      "threshold": 2000,
+      "belowRate": 0.13,
+      "aboveRate": 0.07,
+      "keywords": [
+        "handbag",
+        "purse",
+        "clutch",
+        "tote",
+        "women's bag"
+      ],
+      "categoryPaths": [
+        "Clothing, Shoes & Accessories > Women > Women's Bags & Handbags"
+      ]
+    },
+    "bullion": {
+      "name": "Bullion (Coins & Paper Money)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 1500,
+          "rate": 0.0735
+        },
+        {
+          "upTo": 10000,
+          "rate": 0.05
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.045
+        }
+      ],
+      "keywords": [
+        "bullion",
+        "gold bar",
+        "silver bar",
+        "precious metals"
+      ],
+      "categoryPaths": [
+        "Coins & Paper Money > Bullion"
+      ]
+    },
+    "coinsOther": {
+      "name": "Coins & Paper Money (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 4000,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "coin",
+        "coins",
+        "currency",
+        "paper money"
+      ],
+      "categoryPaths": [
+        "Coins & Paper Money"
+      ],
+      "exclude": [
+        "bullion"
+      ]
+    },
+    "computersHighFee": {
+      "name": "Computer Accessories (High-Fee)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1235
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "3d printer",
+        "cable",
+        "connector",
+        "keyboard",
+        "mouse",
+        "laptop accessories"
+      ],
+      "categoryPaths": [
+        "Computers/Tablets & Networking > 3D Printer Consumables",
+        "Computers/Tablets & Networking > Computer Cables & Connectors",
+        "Computers/Tablets & Networking > Keyboards, Mice & Pointers",
+        "Computers/Tablets & Networking > Laptop & Desktop Accessories"
+      ]
+    },
+    "computersLowFee": {
+      "name": "Computer Hardware (Low-Fee)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.07
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "cpu",
+        "processor",
+        "ram",
+        "memory",
+        "motherboard",
+        "hard drive",
+        "ssd",
+        "laptop",
+        "desktop",
+        "monitor",
+        "printer",
+        "tablet"
+      ],
+      "categoryPaths": [
+        "Computers/Tablets & Networking > CPUs/Processors",
+        "Computers/Tablets & Networking > Memory (RAM)",
+        "Computers/Tablets & Networking > Motherboards",
+        "Computers/Tablets & Networking > Desktops & All-In-Ones",
+        "Computers/Tablets & Networking > Hard Drives",
+        "Computers/Tablets & Networking > Laptops & Netbooks",
+        "Computers/Tablets & Networking > Monitors",
+        "Computers/Tablets & Networking > Printers",
+        "Computers/Tablets & Networking > Tablets & eBook Readers"
+      ]
+    },
+    "computersMemoryCards": {
+      "name": "Computer Memory Cards",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "memory card",
+        "usb adapter",
+        "sd card"
+      ],
+      "categoryPaths": [
+        "Computers/Tablets & Networking > Memory Card & USB Adapters"
+      ]
+    },
+    "computersOther": {
+      "name": "Computers (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "computer",
+        "networking",
+        "router",
+        "switch"
+      ],
+      "categoryPaths": [
+        "Computers/Tablets & Networking"
+      ]
+    },
+    "electronicsHighFee": {
+      "name": "Consumer Electronics Accessories (High-Fee)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1235
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "battery",
+        "power",
+        "portable audio accessories",
+        "tv accessories",
+        "audio accessories",
+        "car electronics",
+        "gps accessories",
+        "vr case",
+        "vr accessories"
+      ],
+      "categoryPaths": [
+        "Consumer Electronics > Multipurpose Batteries & Power",
+        "Consumer Electronics > Portable Audio Accessories",
+        "Consumer Electronics > TV, Video & Audio Accessories",
+        "Consumer Electronics > Car Electronics Accessories",
+        "Consumer Electronics > Virtual Reality"
+      ]
+    },
+    "electronicsOther": {
+      "name": "Consumer Electronics (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "electronics",
+        "tv",
+        "television",
+        "headphones",
+        "speakers"
+      ],
+      "categoryPaths": [
+        "Consumer Electronics"
+      ]
+    },
+    "tires": {
+      "name": "Tires (All Types)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 1000,
+          "rate": 0.0935
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "tire",
+        "tires",
+        "wheel",
+        "atv tire",
+        "car tire",
+        "truck tire",
+        "motorcycle tire"
+      ],
+      "categoryPaths": [
+        "eBay Motors > Parts & Accessories > Car & Truck Tires",
+        "eBay Motors > Parts & Accessories > Motorcycle & Scooter Tires",
+        "eBay Motors > Parts & Accessories > Performance & Racing Tires"
+      ]
+    },
+    "automotiveTools": {
+      "name": "Automotive Tools & Supplies",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 1000,
+          "rate": 0.1135
+        },
+        {
+          "upTo": 2500,
+          "rate": 0.1135
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "automotive tools",
+        "car parts",
+        "truck parts",
+        "safety accessories"
+      ],
+      "categoryPaths": [
+        "eBay Motors > Parts & Accessories > Automotive Tools & Supplies",
+        "eBay Motors > Parts & Accessories > Safety & Security Accessories"
+      ]
+    },
+    "automotiveApparel": {
+      "name": "Automotive Apparel & Merchandise",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1235
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "automotive apparel",
+        "car merchandise",
+        "racing apparel"
+      ],
+      "categoryPaths": [
+        "eBay Motors > Parts & Accessories > Apparel & Merchandise"
+      ]
+    },
+    "inCarTech": {
+      "name": "In-Car Technology, GPS & Security",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 1000,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "gps",
+        "car security",
+        "dash cam",
+        "car stereo",
+        "car audio"
+      ],
+      "categoryPaths": [
+        "eBay Motors > Parts & Accessories > In-Car Technology, GPS & Security"
+      ]
+    },
+    "watchesPartsAccessories": {
+      "name": "Watches, Parts & Accessories",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 1000,
+          "rate": 0.125
+        },
+        {
+          "upTo": 5000,
+          "rate": 0.04
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.03
+        }
+      ],
+      "keywords": [
+        "watch",
+        "watches",
+        "smartwatch",
+        "timepiece"
+      ],
+      "categoryPaths": [
+        "Jewelry & Watches > Watches, Parts & Accessories"
+      ]
+    },
+    "jewelry": {
+      "name": "Jewelry (Everything Else)",
+      "type": "threshold",
+      "threshold": 5000,
+      "belowRate": 0.13,
+      "aboveRate": 0.07,
+      "keywords": [
+        "jewelry",
+        "necklace",
+        "ring",
+        "bracelet",
+        "earrings"
+      ],
+      "categoryPaths": [
+        "Jewelry & Watches"
+      ],
+      "exclude": [
+        "watch"
+      ]
+    },
+    "movieNFTs": {
+      "name": "Movie NFTs",
+      "type": "flat",
+      "rate": 0.05,
+      "keywords": [
+        "nft",
+        "movie nft"
+      ],
+      "categoryPaths": [
+        "Movies & TV > Movie NFTs"
+      ]
+    },
+    "moviesOther": {
+      "name": "Movies & TV (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1495
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "movie",
+        "dvd",
+        "blu-ray",
+        "vhs",
+        "film"
+      ],
+      "categoryPaths": [
+        "Movies & TV"
+      ],
+      "exclude": [
+        "nft"
+      ]
+    },
+    "musicNFTs": {
+      "name": "Music NFTs",
+      "type": "flat",
+      "rate": 0.05,
+      "keywords": [
+        "nft",
+        "music nft"
+      ],
+      "categoryPaths": [
+        "Music > Music NFTs"
+      ]
+    },
+    "vinylRecords": {
+      "name": "Vinyl Records",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1235
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "vinyl",
+        "vinyl record",
+        "lp",
+        "album"
+      ],
+      "categoryPaths": [
+        "Music > Vinyl Records"
+      ]
+    },
+    "musicOther": {
+      "name": "Music (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1495
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "music",
+        "cd",
+        "cassette"
+      ],
+      "categoryPaths": [
+        "Music"
+      ],
+      "exclude": [
+        "vinyl",
+        "nft"
+      ]
+    },
+    "guitarsAndBasses": {
+      "name": "Guitars & Basses",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.0635
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "guitar",
+        "bass",
+        "electric guitar",
+        "acoustic guitar"
+      ],
+      "categoryPaths": [
+        "Musical Instruments & Gear > Guitars & Basses"
+      ]
+    },
+    "djProAudio": {
+      "name": "DJ Equipment & Pro Audio Equipment",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "dj equipment",
+        "pro audio",
+        "mixer",
+        "turntable",
+        "controller"
+      ],
+      "categoryPaths": [
+        "Musical Instruments & Gear > DJ Equipment",
+        "Musical Instruments & Gear > Pro Audio Equipment"
+      ]
+    },
+    "musicalInstrumentsOther": {
+      "name": "Musical Instruments (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.10
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "musical instrument",
+        "piano",
+        "drums",
+        "violin",
+        "saxophone"
+      ],
+      "categoryPaths": [
+        "Musical Instruments & Gear"
+      ]
+    },
+    "videoGamesAccessories": {
+      "name": "Video Game Accessories & Games",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.1235
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "video game",
+        "game",
+        "controller",
+        "accessories",
+        "replacement parts"
+      ],
+      "categoryPaths": [
+        "Video Games & Consoles > Replacement Parts & Tools",
+        "Video Games & Consoles > Video Game Accessories",
+        "Video Games & Consoles > Video Games"
+      ]
+    },
+    "videoGameConsoles": {
+      "name": "Video Game Consoles",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.07
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "console",
+        "playstation",
+        "xbox",
+        "nintendo",
+        "gaming console"
+      ],
+      "categoryPaths": [
+        "Video Games & Consoles > Video Game Consoles"
+      ]
+    },
+    "videoGamesOther": {
+      "name": "Video Games (Everything Else)",
+      "type": "tiered",
+      "tiers": [
+        {
+          "upTo": 2500,
+          "rate": 0.09
+        },
+        {
+          "upTo": "Infinity",
+          "rate": 0.0235
+        }
+      ],
+      "keywords": [
+        "video games"
+      ],
+      "categoryPaths": [
+        "Video Games & Consoles"
+      ]
+    },
+    "nfts": {
+      "name": "NFTs (All Categories)",
+      "type": "flat",
+      "rate": 0.05,
+      "keywords": [
+        "nft",
+        "non-fungible token"
+      ],
+      "categoryPaths": [
+        "Art NFTs",
+        "Emerging NFTs",
+        "Non-Sport Trading Card NFTs",
+        "Movie NFTs",
+        "Music NFTs",
+        "Sport Trading Card NFTs",
+        "CCG NFTs"
+      ]
+    }
+  }
+}
